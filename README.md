@@ -5,8 +5,8 @@
 <p align="center">简体中文 | <a href="README.en.md">English</a></p>
 
 <p align="center">
-<a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-v2.0-blue" alt="Version"></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
+<a href="CHANGELOG.md"><img src="https://img.shields.io/badge/version-v2.1-blue" alt="Version"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-green" alt="License"></a>
 <a href=".github/workflows/ci.yml"><img src="https://img.shields.io/badge/CI-示例AI味%3C20-brightgreen" alt="CI"></a>
 <a href="tools/"><img src="https://img.shields.io/badge/python-3.8%2B-blue?logo=python" alt="Python"></a>
 <a href="corpus/README.md"><img src="https://img.shields.io/badge/语料-60样本·30小时·39万字-8b5cf6" alt="Corpus"></a>
