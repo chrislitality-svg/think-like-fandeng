@@ -45,17 +45,17 @@
 - 收尾以一句总结为主，堆行动建议的只有 17%；
 - 一口气（逗号之间）中位 7–9 个字。
 
-完整研究方法、每条结论的原文出处与覆盖率 → [METHODOLOGY.md](METHODOLOGY.md) 和 [references/thinking-思维运转.md](references/thinking-思维运转.md)。
+完整研究方法、每条结论的原文出处与出现比例 → [METHODOLOGY.md](METHODOLOGY.md) 和 [references/thinking-思维运转.md](references/thinking-思维运转.md)。
 
 ## 仓库结构
 
 ```
 SKILL.md                  skill 本体：五种用法 + 讲书十步 + 交付前自检
-references/               研究结论（每条带出处、时间点、覆盖率、反例）
+references/               研究结论（每条带出处、时间点、出现比例、反例）
 METHODOLOGY.md            研究方法全文 + 证据分级表
 examples/                 12 个示例，覆盖五种用法
 tools/ai_flavor_check.py  「AI 味」检测器（基准为樊登语料实测）
-research/                 抽样、编码表、统计脚本（可一键复算）
+research/                 抽样记录、数据表、统计脚本（可一键复算）
 corpus/                   语料说明（转写全文与音频受版权约束不入库）
 ```
 

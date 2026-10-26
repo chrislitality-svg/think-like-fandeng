@@ -75,7 +75,8 @@ def main():
     n_a = len(a)
     throw_q = sum(v for k, v in h1.items() if "抛问题" in k)
     print("\n二、假设检验")
-    print(f"  H1 开头抛问题（A层）: {throw_q}/{n_a} ({throw_q/max(n_a,1):.0%})  分布: {dict(h1)}")
+    intro_q = sum(v for k, v in h1.items() if "介绍书和作者" in k)
+    print(f"  H1 开头抛问题（A层）: {throw_q}/{n_a} ({throw_q/max(n_a,1):.0%})  开头介绍书和作者: {intro_q}/{n_a} ({intro_q/max(n_a,1):.0%})  分布: {dict(h1)}")
 
     # H2 观点段后跟故事/案例
     seg_by_sid = defaultdict(list)
@@ -137,7 +138,8 @@ def main():
         act = sum(v for k, v in c.items() if "行动" in k)
         print(f"  H7 结尾行动建议（{lay}层）: {act}/{len(w)} ({act/max(len(w),1):.0%})  分布: {dict(c)}")
     qc = Counter(r.get("收尾", "") for r in qas if r["sid"].startswith("D"))
-    print(f"     D层应答收尾分布: {dict(qc)}")
+    n_d = sum(qc.values())
+    print(f"     D层应答收尾分布（共{n_d}）: " + ", ".join(f"{k} {v} ({v/max(n_d,1):.0%})" for k, v in qc.most_common()))
 
     # H8 被追问先讲故事
     d_q = [r for r in qas if r["sid"].startswith("D")]
