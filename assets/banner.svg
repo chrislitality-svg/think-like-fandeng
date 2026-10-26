@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <rect width="1200" height="300" fill="#faf7f0"/>
+  <rect x="60" y="70" width="16" height="160" fill="#c0392b"/>
+  <text x="110" y="135" font-family="Songti SC, Noto Serif SC, serif" font-size="64" font-weight="700" fill="#1a1a1a">像樊登一样讲书</text>
+  <text x="112" y="190" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="22" fill="#555">先报书再讲理 · 观点永远挂着故事 · 随时把「他」换成「你」</text>
+  <g transform="translate(950,90)">
+    <rect x="0" y="0" width="150" height="110" rx="8" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+    <rect x="12" y="14" width="126" height="10" fill="#c0392b"/>
+    <line x1="12" y1="44" x2="138" y2="44" stroke="#999" stroke-width="4"/>
+    <line x1="12" y1="64" x2="118" y2="64" stroke="#999" stroke-width="4"/>
+    <line x1="12" y1="84" x2="128" y2="84" stroke="#999" stroke-width="4"/>
+  </g>
+  <text x="1025" y="230" font-family="PingFang SC, sans-serif" font-size="16" fill="#888" text-anchor="middle">30 小时语料 · 786 单元编码</text>
+</svg>

@@ -1,3 +1,9 @@
+<p align="center"><img src="assets/banner.svg" alt="像樊登一样讲书" width="720"></p>
+
+<h3 align="center">像樊登一样讲书</h3>
+
+<p align="center">简体中文 | <a href="README.en.md">English</a></p>
+
 # 像樊登一样讲书（think-like-fandeng）
 
 一句话：把一本书、一个道理，讲成樊登那样——**先报书名再讲理，观点永远挂着故事，随时把「他」换成「你」**。这是一个装进 AI 工具的 skill，你说一句话，它按樊登讲书的方法产出内容。
@@ -50,8 +56,8 @@
 ## 仓库结构
 
 ```
-SKILL.md                  skill 本体：五种用法 + 讲书十步 + 交付前自检
-references/               研究结论（每条带出处、时间点、出现比例、反例）
+SKILL.md                  skill 本体：五种用法 + 讲书十步 + 交付前自检（自足可用）
+references/               专题库：生成前检验/十步细则/对谈手册/改稿审查/禁用清单（带实测频次）/句法气口/标杆拆解/金句库/量化复盘 + 研究层主文档
 METHODOLOGY.md            研究方法全文 + 证据分级表
 examples/                 12 个示例，覆盖五种用法
 tools/ai_flavor_check.py  「AI 味」检测器（基准为樊登语料实测）

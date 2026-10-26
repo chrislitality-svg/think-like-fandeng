@@ -1,0 +1,21 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: 工具语法检查
+        run: python3 -m py_compile tools/ai_flavor_check.py research/scripts/stats.py research/scripts/sample.py research/scripts/agreement.py
+      - name: 抽样可复跑（种子固定）
+        run: |
+          python3 research/scripts/sample.py || echo "样本清单文件缺失时跳过（研究数据不在 CI 环境复制）"
+      - name: 示例 AI 味回归（门槛 < 20）
+        run: |
+          python3 .github/scripts/check_examples.py
