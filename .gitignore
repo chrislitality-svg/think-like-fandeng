@@ -1,0 +1,15 @@
+# 版权与伦理（方案第五节）：音频与转写全文不入库
+research/scripts/audio/
+corpus/*.txt
+corpus/*.json
+!corpus/README.md
+research/scripts/ms_cache/
+research/scripts/*.log
+research/scripts/c04*.txt
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# 中间产物（保留合并后的总表与复核报告）
+research/编码输出/
+research/复核编码/
